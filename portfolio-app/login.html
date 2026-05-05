@@ -85,7 +85,9 @@
 
         localStorage.setItem("currentUser", JSON.stringify(user));
 
-        location.href = "dashboard.html";
+        setTimeout(() => {
+          location.href = "index.html";
+        }, 500);
       }
     </script>
   </body>
