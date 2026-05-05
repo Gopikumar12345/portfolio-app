@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+
+  <body>
+    <div class="auth-container">
+      <div class="auth-box">
+        <h2 id="title">Login</h2>
+
+        <input id="name" placeholder="Name" style="display: none" />
+        <input id="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
+
+        <button onclick="auth()">Login</button>
+
+        <p onclick="toggleMode()" style="cursor: pointer">
+          Don't have account? Register
+        </p>
+
+        <p id="msg"></p>
+      </div>
+    </div>
+
+    <script>
+      let users = JSON.parse(localStorage.getItem("users") || "[]");
+      let isLogin = true;
+
+      function toggleMode() {
+        isLogin = !isLogin;
+
+        document.getElementById("title").innerText = isLogin
+          ? "Login"
+          : "Register";
+
+        document.getElementById("name").style.display = isLogin
+          ? "none"
+          : "block";
+
+        document.querySelector("button").innerText = isLogin
+          ? "Login"
+          : "Register";
+
+        document.getElementById("msg").innerText = "";
+      }
+
+      function auth() {
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let pass = document.getElementById("password").value.trim();
+        let msg = document.getElementById("msg");
+
+        if (!email || !pass || (!isLogin && !name)) {
+          msg.innerText = "Please fill all fields";
+          return;
+        }
+
+        // REGISTER
+        if (!isLogin) {
+          let exists = users.find((u) => u.email === email);
+
+          if (exists) {
+            msg.innerText = "User already exists!";
+            return;
+          }
+
+          users.push({ name, email, password: pass });
+          localStorage.setItem("users", JSON.stringify(users));
+
+          msg.innerText = "Registered successfully! Now login";
+          toggleMode();
+          return;
+        }
+
+        // LOGIN
+        let user = users.find((u) => u.email === email && u.password === pass);
+
+        if (!user) {
+          msg.innerText = "Invalid credentials";
+          return;
+        }
+
+        localStorage.setItem("currentUser", JSON.stringify(user));
+
+        location.href = "dashboard.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FULL PAGE CENTER */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* BACKGROUND COLOR (LOGIN PAGE) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+}
+
+/* LOGIN BOX CENTER */
+.auth-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.auth-box {
+  width: 340px;
+  padding: 30px;
+
+  background: #1e293b;
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* TITLE */
+.auth-box h2 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* INPUTS */
+.auth-box input {
+  width: 100%;
+  padding: 11px;
+  margin: 8px 0;
+
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  background: #0f172a;
+  color: #fff;
+}
+
+/* BUTTON */
+.auth-box button {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
+
+/* SWITCH TEXT */
+.auth-box p {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+/* MESSAGE */
+#msg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #f87171;
+}

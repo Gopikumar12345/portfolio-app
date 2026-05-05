@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Portfolio Builder Website</div>
+
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#templates">Templates</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div id="authMenu"></div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Build Your Dream<span class="highlight"> Portfolio</span></h1>
+
+          <p class="hero-text">
+            Create stunning, professional portfolios using ready-made templates.
+            No coding required — just select, customize, and publish. Build your
+            personal brand, showcase your skills, and get noticed by recruiters
+            and clients worldwide.
+          </p>
+
+          <div class="hero-buttons">
+            <button onclick="scrollToSection('templates')">
+              🚀 Get Started
+            </button>
+
+            <button class="secondary-btn" onclick="scrollToSection('services')">
+              View Services
+            </button>
+          </div>
+
+          <!-- STATS -->
+          <div class="hero-stats">
+            <div>
+              <h3>50+</h3>
+              <p>Templates</p>
+            </div>
+
+            <div>
+              <h3>10K+</h3>
+              <p>Users</p>
+            </div>
+
+            <div>
+              <h3>99%</h3>
+              <p>Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <!-- ABOUT -->
+    <section id="about" class="about-premium">
+      <div class="about-wrapper">
+        <h2>About Us</h2>
+
+        <p class="subtitle">
+          We create modern portfolio experiences that help you stand out in the
+          digital world.
+        </p>
+
+        <div class="about-card">
+          <p>
+            Our platform is built for developers, designers, and students who
+            want a professional online presence. With ready-made templates and
+            easy customization, you can build your portfolio in minutes.
+          </p>
+
+          <p>
+            We focus on performance, clean UI, and modern design trends to help
+            you impress recruiters and clients globally.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <h3>10K+</h3>
+              <span>Users</span>
+            </div>
+
+            <div>
+              <h3>50+</h3>
+              <span>Templates</span>
+            </div>
+
+            <div>
+              <h3>99%</h3>
+              <span>Satisfaction</span>
+            </div>
+          </div>
+
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>What We Offer</h2>
+        <p class="section-subtitle">
+          Everything you need to build a professional portfolio website
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">💼</div>
+            <h3>Portfolio Builder</h3>
+            <p>Create stunning portfolio easily.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>Modern Templates</h3>
+            <p>Beautiful UI templates ready to use.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">⚡</div>
+            <h3>Fast Setup</h3>
+            <p>Launch your site in minutes.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">✏️</div>
+            <h3>Easy Editing</h3>
+            <p>No coding required.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🔐</div>
+            <h3>Secure Login</h3>
+            <p>Safe authentication system.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>Works on all devices.</p>
+          </div>
+
+          <!-- EXTRA 3 NEW BOXES -->
+          <div class="service-card">
+            <div class="icon">🚀</div>
+            <h3>High Performance</h3>
+            <p>Optimized fast loading system.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🌐</div>
+            <h3>SEO Ready</h3>
+            <p>Better ranking on search engines.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">☁️</div>
+            <h3>Cloud Save</h3>
+            <p>Save your data securely online.</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM CONTENT -->
+        <div class="services-bottom">
+          <h3>Why Choose Us?</h3>
+          <p>
+            We help developers and students build modern portfolio websites
+            quickly using ready-made templates, fast tools, and secure systems.
+          </p>
+
+          <button>Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects" class="projects">
+      <h2>Recent Projects</h2>
+      <p>Some of my latest portfolio works</p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.webp" />
+          <div class="overlay">Landing Page Design</div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project2.avif" />
+          <div class="overlay">Portfolio Website</div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project3.webp" />
+          <div class="overlay">UI Dashboard</div>
+        </div>
+      </div>
+    </section>
+    <!-- TEMPLATES -->
+    <section id="templates" class="section">
+      <h2>Choose Your Template</h2>
+      <p class="section-subtitle">Click and start editing instantly</p>
+
+      <div class="templates-grid">
+        <!-- 1 -->
+        <div class="template-card">
+          <span class="badge">Popular</span>
+          <img src="images/ui.png" />
+          <div class="overlay">
+            <h3>Modern Portfolio</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="template-card">
+          <span class="badge">New</span>
+          <img src="images/ui2.png" />
+          <div class="overlay">
+            <h3>Minimal Clean</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="template-card">
+          <img src="images/ui3.png" />
+          <div class="overlay">
+            <h3>Dark Professional</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="template-card">
+          <img src="images/ui4.png" />
+          <div class="overlay">
+            <h3>Creative Designer</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="template-card">
+          <img src="images/ui.png" />
+          <div class="overlay">
+            <h3>Developer Pro</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="template-card">
+          <img src="images/ui2.png" />
+          <div class="overlay">
+            <h3>Business Pro</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="template-card">
+          <img src="images/ui3.png" />
+          <div class="overlay">
+            <h3>Agency Style</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="template-card">
+          <img src="images/ui4.png" />
+          <div class="overlay">
+            <h3>Freelancer</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="template-card">
+          <img src="images/ui.png" />
+          <div class="overlay">
+            <h3>Startup UI</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="template-card">
+          <img src="images/ui2.png" />
+          <div class="overlay">
+            <h3>Portfolio Dark</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="template-card">
+          <img src="images/ui3.png" />
+          <div class="overlay">
+            <h3>UI/UX Designer</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="template-card">
+          <img src="images/ui4.png" />
+          <div class="overlay">
+            <h3>Premium Pro</h3>
+            <button>Use Template</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TRUSTED BY -->
+
+    <section class="clients">
+      <h2>Trusted By</h2>
+
+      <p class="client-subtitle">
+        Startups, developers and companies who trust our portfolio builder
+        platform
+      </p>
+
+      <div class="client-grid">
+        <img src="images/L1.png" />
+        <img src="images/l2.png" />
+        <img src="images/l3.png" />
+        <img src="images/l4.png" />
+      </div>
+    </section>
+    <!-- STATS -->
+    <section class="stats-section">
+      <!-- TITLE -->
+      <h2>Our Achievements</h2>
+      <p class="stats-subtitle">Trusted by thousands of users worldwide</p>
+
+      <!-- STATS GRID -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h2>50+</h2>
+          <p>Templates</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>10K+</h2>
+          <p>Users</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>100+</h2>
+          <p>Projects</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>5+</h2>
+          <p>Years Experience</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>99%</h2>
+          <p>Success Rate</p>
+        </div>
+
+        <div class="stat-card">
+          <h2>4.9★</h2>
+          <p>User Rating</p>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-premium">
+      <div class="contact-wrapper">
+        <!-- HEADER -->
+        <div class="contact-header">
+          <h2>Let’s Build Something Great</h2>
+          <p>
+            Have an idea or project? Drop a message and we’ll get back within 24
+            hours.
+          </p>
+        </div>
+
+        <!-- MAIN CARD -->
+        <div class="contact-card">
+          <!-- LEFT INFO -->
+          <div class="contact-left">
+            <h3>Contact Information</h3>
+
+            <div class="info-item">📧 support@portfolio.com</div>
+            <div class="info-item">📞 +91 98765 43210</div>
+            <div class="info-item">📍 India</div>
+
+            <div class="social-row">
+              <a href="https://www.google.com" target="_blank"> 🌐 Google </a>
+
+              <a href="https://twitter.com" target="_blank"> 🐦 Twitter </a>
+
+              <a href="https://linkedin.com" target="_blank"> 💼 LinkedIn </a>
+
+              <a href="https://instagram.com" target="_blank"> 📸 Instagram </a>
+            </div>
+
+            <p class="small-text">We usually respond within a few hours.</p>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="contact-right">
+            <div class="input-row">
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email Address" />
+            </div>
+
+            <input type="text" placeholder="Subject" />
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button>Send Message →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-box brand">
+          <h3>Portfolio Builder</h3>
+          <p>
+            Build modern portfolios using ready-made templates. Fast, responsive
+            and easy-to-use platform for creators.
+          </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#templates">Templates</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="footer-box">
+          <h4>Features</h4>
+          <ul>
+            <li>⚡ Fast Setup</li>
+            <li>🎨 Modern UI</li>
+            <li>📱 Mobile Friendly</li>
+            <li>🔐 Secure Login</li>
+          </ul>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-box">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#">🌐 Google</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">💼 LinkedIn</a>
+            <a href="#">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Portfolio Builder. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script>
+      let user = JSON.parse(localStorage.getItem("currentUser") || "null");
+
+      const authMenu = document.getElementById("authMenu");
+
+      /* NAVBAR LOGIN / LOGOUT */
+      if (user) {
+        authMenu.innerHTML = `
+          <span style="margin-right:10px;">Hi, ${user.name}</span>
+          <button onclick="logout()">Logout</button>
+        `;
+      } else {
+        authMenu.innerHTML = `
+          <a href="login.html"><button>Login / Register</button></a>
+        `;
+      }
+
+      /* LOGOUT */
+      function logout() {
+        localStorage.removeItem("currentUser");
+        location.reload();
+      }
+
+      /* SCROLL */
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
